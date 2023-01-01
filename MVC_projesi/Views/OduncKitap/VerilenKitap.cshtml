@@ -1,0 +1,50 @@
+﻿
+@{ ViewBag.Title = "Verilen Kitaplar";
+
+}
+
+@using KutuphaneProgrami.Data.Model
+@model List<OduncKitap>
+
+
+
+<h2 style="display:inline-block;">Verilen KİTAPLAR</h2>
+
+<a href="@Url.Action("KitapVer","OduncKitap")" class="btn btn-success" style="float:right;">Kitap Ver</a>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Kitap Adı</th>
+            <th>Kitabı Alan Üye</th>
+            <th>Aldığı Tarih </th>
+            <th>Getireceği Tarih </th>
+            <th>Güncelle</th>
+            <th>Getirildi Olarak İşaretle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var oduncKitap  in Model)
+        {
+        <tr>
+            <td>@oduncKitap.Kitap.Ad</td>
+            <td>@oduncKitap.Uye.Ad</td>
+            <td>@oduncKitap.AlisTarihi.ToString("dddd,dd MMMM yyyy")</td>
+            <td>@oduncKitap.GetirecegiTarih.ToString("dddd,dd MMMM yyyy")</td>
+            <td> <a href="@Url.Action("VerilenKitabiGuncelle","OduncKitap" ,new {oduncKitapId = oduncKitap.Id })" class="btn btn-danger">Güncelle</a></td>
+            <td> <button class="getirdiOlarakIsaretle btn btn-success" value="@oduncKitap.Id">Getirildi Olarak İşaretle</button></td>
+        </tr>
+        }
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Kitap Adı</th>
+            <th>Kitabı Alan Üye</th>
+            <th>Aldığı Tarih </th>
+            <th>Getireceği Tarih </th>
+            <th>Güncelle</th>
+            <th>Getirildi Olarak İşaretle</th>
+        </tr>
+    </tfoot>
+</table>-

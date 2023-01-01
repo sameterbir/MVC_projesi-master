@@ -1,0 +1,56 @@
+﻿
+@{ ViewBag.Title = "Üyeler"; }
+
+@using KutuphaneProgrami.Data.Model
+@model List<Uye>
+
+
+
+<script src="~/Scriptler/Main.js"></script>
+
+<h2>ÜYELER</h2>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad </th>
+            <th>Tc</th>
+            <th>Tel</th>
+            <th>Kayıt Tarihi</th>
+            <th>Ceza</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var uye in Model)
+        {
+<tr>
+    <td>@uye.Ad</td>
+    <td>@uye.Soyad</td>
+    <td>@uye.Tc</td>
+    <td>@uye.Telefon</td>
+    <td>@uye.KayitTarihi</td>
+    <td>@uye.Ceza</td>
+    <td> <a href="@Url.Action("Guncelle","Uye",new {uyeId = uye.Id })" class=" btn btn-custom">Güncelle</a></td>
+    <td> <button  class="btn btn-danger" id="uyeSil"  value="@uye.Id">Sil</button></td>
+</tr>
+}
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad </th>
+            <th>Tc</th>
+            <th>Tel</th>
+            <th>Kayıt Tarihi</th>
+            <th>Ceza</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>
+

@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Kategoriler";
+}
+
+@using KutuphaneProgrami.Data.Model
+@model List<Kategori>
+
+
+
+<h2>KATEGORİLER</h2>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Kitap Adeti</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ktg in Model)
+        {
+            <tr>
+                <td>@ktg.Ad</td>
+                <td>@ktg.Kitaplar.Count()</td>
+                <td> <button class="guncelle btn btn-custom" value="@ktg.Id" >Güncelle</button></td>
+                <td> <button class="sil btn btn-danger" value="@ktg.Id">Sil</button></td>
+            </tr>
+
+        }
+       
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Ad</th>
+            <th>Kitap Adeti</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>

@@ -1,0 +1,50 @@
+﻿
+@{ ViewBag.Title = "Üye Güncelle"; }
+@using KutuphaneProgrami.Data.Model
+@model Uye
+
+<h2>Üye Güncelle</h2>
+
+<script src="~/Scriptler/Main.js"></script>
+
+<form class="form-horizontal">
+
+    <div class="form-group">
+        <label class="col-md-12">  Ad </label>
+        <div class="col-md-12">
+            <input id="uyeAd" value="@Model.Ad"  type="text" class="form-control" placeholder="Üye Adını Giriniz ">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-12">  Soyad </label>
+        <div class="col-md-12">
+            <input id="uyeSoyad" value="@Model.Soyad"  type="text" class="form-control" placeholder="Üye Soyadını Giriniz">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-12">  TC  </label>
+        <div class="col-md-12">
+            <input id="uyeTc" value="@Model.Tc" type="text" class="form-control" placeholder="Üye TC No Giriniz">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-12">  Telefon  </label>
+        <div class="col-md-12">
+            <input id="uyeTel" value="@Model.Telefon" type="text" class="form-control" placeholder="Üye Tel No Giriniz">
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="button" data-id="@Model.Id" id="uyeGuncelle" class="btn btn-block btn-info" value="Güncelle">
+        </div>
+    </div>
+
+
+</form>

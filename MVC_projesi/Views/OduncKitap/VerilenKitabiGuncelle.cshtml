@@ -1,0 +1,70 @@
+﻿
+@{ ViewBag.Title = "Verilen Kitapı Guncelle"; }
+
+@using KutuphaneProgrami.Data.Model
+
+@model OduncKitap
+
+<h2>Verilen Kitapı Guncelle</h2>
+
+<script src="~/Scriptler/Main.js"></script>
+
+<form class="form-horizontal">
+
+    <div class="form-group">
+        <label class="col-sm-12">Üyeler</label>
+        <div class="col-sm-10">
+            <select id="uyeId" class="form-control">
+                @foreach (var uye in ViewBag.Uyeler)
+                {
+                    if (uye.Id == Model.UyeId)
+                    {
+                        <option data-id="@uye.Id" selected>@uye.Ad</option>
+                    }
+                    else
+                    {
+                        <option data-id="@uye.Id">@uye.Ad</option>
+                    }
+
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-12">Kitaplar</label>
+        <div class="col-sm-12">
+            <select id="kitapId" class="form-control">
+                @foreach (var kitap in ViewBag.Kitaplar)
+                {
+                    if (kitap.Id == Model.UyeId)
+                    {
+                        <option data-id="@kitap.Id" selected>@kitap.Ad</option>
+                    }
+                    else
+                    {
+                        <option data-id="@kitap.Id">@kitap.Ad</option>
+                    }
+
+                    
+                }
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="col-md-12">Getireceği Tarih  </label>
+        <div class="col-md-12">
+            <input id="getirecegiTarih" type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" value="@Model.GetirecegiTarih.ToString("yyyy-MM-dd") " class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="button" id="verilenKitabiGuncelle" data-id="@Model.Id" class="btn btn-block btn-info" value="Güncelle">
+        </div>
+    </div>
+
+
+</form>

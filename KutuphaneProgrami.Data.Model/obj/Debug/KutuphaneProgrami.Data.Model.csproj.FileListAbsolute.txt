@@ -1,0 +1,12 @@
+C:\Users\vlike\source\repos\MVC_projesi\KutuphaneProgrami.Data.Model\bin\Debug\KutuphaneProgrami.Data.Model.dll
+C:\Users\vlike\source\repos\MVC_projesi\KutuphaneProgrami.Data.Model\bin\Debug\KutuphaneProgrami.Data.Model.pdb
+C:\Users\vlike\source\repos\MVC_projesi\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.csproj.CoreCompileInputs.cache
+C:\Users\vlike\source\repos\MVC_projesi\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.dll
+C:\Users\vlike\source\repos\MVC_projesi\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.pdb
+C:\Users\vlike\source\repos\MVC_projesi\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.csprojAssemblyReference.cache
+C:\MVC_projesi-master\MVC_projesi-master\KutuphaneProgrami.Data.Model\bin\Debug\KutuphaneProgrami.Data.Model.dll
+C:\MVC_projesi-master\MVC_projesi-master\KutuphaneProgrami.Data.Model\bin\Debug\KutuphaneProgrami.Data.Model.pdb
+C:\MVC_projesi-master\MVC_projesi-master\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.csproj.AssemblyReference.cache
+C:\MVC_projesi-master\MVC_projesi-master\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.csproj.CoreCompileInputs.cache
+C:\MVC_projesi-master\MVC_projesi-master\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.dll
+C:\MVC_projesi-master\MVC_projesi-master\KutuphaneProgrami.Data.Model\obj\Debug\KutuphaneProgrami.Data.Model.pdb
